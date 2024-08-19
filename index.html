@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominoes Project On My Own</title>
+    <!-- google font link tag start here-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- google font link tag ends here -->
+    <link rel="stylesheet" href="style.css">
+     <!-- <link rel="stylesheet" href="mystyle.css"> -->
+</head>
+<body>
+
+
+    <div id="infoWindow" class="info-window">
+        <div class="info-content">
+            <h2>Welcome to the Domino Calculator!</h2>
+            <p>
+                <strong> Remember: </strong>
+                <br><br>
+                This isn't a domino game; it's a tool to use while you’re actually playing dominoes with friends or online. It helps you track, count, and analyze tiles to better guess what your opponents might have. Designed specifically for Domino Block games, You need to enter the tiles you play on the board into the app. You can also select your 7 tiles in the app to make tracking easier. It’s all about giving you a strategic edge and making your game experience smoother.
+            </p>
+
+            <h2 class="copyright"> @copyright <a href="https://www.facebook.com/ahmad.masum.908"><strong>Masum</strong></a></h2>
+        </div>
+        <!-- <button id="closeInfoWindow" >Close</button> -->
+        <button class="close" id="closeInfoWindow" >Close</button>
+
+    </div>
+
+
+
+
+    <div id="yourTilesContainer " class="container container1 ">
+        <div class="logo-main">
+            <div class="logo">
+                Dominoes <span>Calculator</span>
+            </div>
+           </div>
+          <h2> Your Tiles</h2>
+         <div id="yourTilesControls" class="controls">
+            <button class="button"  id="undoYourTilesButton">
+                <img src="https://img.icons8.com/ios-filled/50/undo.png" alt="Undo">
+                Undo
+            </button>
+          </div>
+            <div class="board" id="yourTiles"></div>
+        </div>
+       
+
+
+    <div class="container container2"
+     id="tilesLeftContainer">
+        <h2>All Tiles</h2>
+        <div id="tilesControls" class="controls">
+            <input type="text" id="searchInput" placeholder="Search tiles....">
+
+            <button class="button" id="undoButton">
+                <img src="https://img.icons8.com/ios-filled/50/undo.png" alt="Undo"> Undo
+            </button>
+
+            <button class="button" id="resetButton">
+                <img src="https://img.icons8.com/ios-filled/50/restart.png" alt="Reset">
+                Reset
+            </button>
+          </div>
+
+            <p>Single click to play a tiles to 'Tiles Played' box </p>
+            <p>Double click to add tile on 'Your Tiles' box </p>
+        <div class="tiles-grid" id="tilesLeft">
+    </div>
+    </div>
+
+    <div id="tilesPlayedContainer" class="container
+     container3">
+        <h2>Tiles Played</h2>
+        <div class="board" id="board"></div>
+    </div>
+    
+    <script src="script.js"> </script>
+
+</body>
+</html>
+

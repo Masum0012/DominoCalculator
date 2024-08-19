@@ -1,0 +1,285 @@
+.close {
+	overflow: hidden;
+	position: relative;
+	border: none;
+	padding: 0;
+	width: 2em; height: 2em;
+	border-radius: 50%;
+	background: transparent;
+	color: #1da1f2;
+	font: inherit;
+	text-indent: 100%;
+	cursor: pointer;
+	
+	&:focus {
+		outline: solid 0 transparent;
+		box-shadow: 0 0 0 2px #8ed0f9
+	}
+	
+	&:hover {
+		background: rgba(29, 161, 142, .1)
+	}
+	
+	&:before, &:after {
+		position: absolute;
+		top: 15%; left: calc(50% - .0625em);
+		width: .125em; height: 70%;
+		border-radius: .125em;
+		transform: rotate(45deg);
+		background: currentcolor;
+		content: ''
+	}
+	
+	&:after { transform: rotate(-45deg); }
+}
+
+
+.copyright{
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+    
+}
+
+.copyright > a {
+    color: black;
+}
+
+
+
+.info-window {
+    position: fixed; /* Position it on top of other content */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center it */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it's on top of other elements */
+    display: none; /* Initially hidden */
+    width: 80%; /* Adjust as needed */
+    max-width: 600px; /* Adjust as needed */
+    
+}
+
+
+.info-content {
+    text-align: center; /* Center the text within the window */
+    font-size: 18px;
+
+}
+
+#closeInfoWindow {
+    background-color: white; /* White background */
+    border: none;
+    padding: 6px 12px; /* Match other button dimensions */
+    display: flex;
+    align-items: center; /* Center icon vertically */
+    cursor: pointer;
+    border-radius: 4px;
+}
+#closeInfoWindow img {
+    width: 16px; /* Match other button icon dimensions */
+    height: 16px;
+    color: black; /* Black icon color */
+}
+
+
+
+.info-p{
+    font-family: "Poppins", sans-serif;
+
+    
+}
+
+
+
+
+
+
+
+.logo-main{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #C2CAD0;
+    font-family: "Roboto Condensed", sans-serif ;
+    cursor: pointer;
+}
+
+.logo{
+    /* text-align: center; */
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.logo span{
+    color: #ff5733;
+}
+
+
+.tile{
+
+display: inline-block;
+border: 1px solid black;
+padding: 5px;
+margin: 2px;
+background-color: #f0f0f0;
+cursor: pointer;
+border-radius: 4px;
+
+
+}
+
+.half{
+    display: block;
+    text-align: center;
+    margin: 2px 0;
+    
+}
+
+
+.container{
+
+border: 1px solid #ccc;
+padding: 10px;
+background-color: #C2CAD0;
+margin-bottom: 20px;
+border-radius: 8px;
+
+}
+
+
+
+.container1{
+    background-color: #C2CAD0;
+    
+}
+
+.container2{
+   background-color: #B3B4BD;
+}
+
+.container3{
+    background-color: #C2CAD0;
+}
+
+h2{
+    text-align: center;
+    font-family: sans-serif;
+    color: #124E66;
+}
+
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 8px;
+}
+
+.button{
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover{
+    background-color: #45a049;
+}
+
+.button img{
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.tiles-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+}
+
+
+
+.row{
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+
+
+.row-heading{
+    font-weight: bold;
+    margin-right: 10px;
+    align-self: center;
+}
+
+
+.searchInput{
+
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+
+@media(max-width: 788px){
+
+    .button{
+        padding: 4px 8px;
+        font-size: 12px ;
+
+    }
+
+    .button img{
+        width: 14px;
+        height: 14px;
+    }
+
+    #tilesControls{
+        /* flex-direction: column; */
+        gap: 4px;
+    }
+}
+
+
+
+@media(max-width: 230px){
+
+    .button{
+        padding: 4px 8px;
+        font-size: 12px ;
+
+    }
+
+    .button img{
+        width: 14px;
+        height: 14px;
+    }
+
+    #tilesControls{
+        flex-direction: column;
+        gap: 4px;
+    }
+}
+
+
+
+/* Responsive design ends from here */
